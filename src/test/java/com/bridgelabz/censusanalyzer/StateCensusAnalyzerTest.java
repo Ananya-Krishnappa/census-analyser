@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import com.bridgelabz.censusanalyzer.dto.CsvStateCensus;
+import com.bridgelabz.censusanalyzer.dto.CsvStateCode;
 import com.bridgelabz.censusanalyzer.exception.CsvCustomException;
 import com.bridgelabz.censusanalyzer.service.IStateCensusAnalyser;
 import com.bridgelabz.censusanalyzer.service.impl.StateCensusAnalyser;
@@ -19,6 +20,7 @@ public class StateCensusAnalyzerTest {
 	private final static String WRONG_FILE_TYPE = "src/test/resources/StateCensusData.json";
 	private final static String INCORRECT_DELIMITER = "src/test/resources/StateCensusData_incorrectDelimiter.csv";
 	private final static String INCORRECT_HEADER = "src/test/resources/StateCensusData_incorrectHeader.csv";
+	private final static String STATE_CODE_CSV = "src/main/resources/StateCode.csv";
 	private static IStateCensusAnalyser censusAnalyser;
 
 	@BeforeAll
@@ -70,5 +72,11 @@ public class StateCensusAnalyzerTest {
 		String expectedMessage = "Number of data fields does not match number of headers";
 		String actualMessage = exception.getMessage();
 		assertTrue(actualMessage.contains(expectedMessage));
+	}
+
+	@Test
+	public void givenNumberOfStateCodeRecords_ChecksWhetherMatchesOrNot() throws CsvCustomException {
+		int checkNumberOfRecords = censusAnalyser.count(STATE_CODE_CSV, CsvStateCode.class);
+		assertEquals(37, checkNumberOfRecords);
 	}
 }
