@@ -1,8 +1,8 @@
-package com.bridgelabz.censusanlayzer.service;
+package com.bridgelabz.censusanalyzer.service;
 
 import java.util.List;
 
-import com.bridgelabz.censusanlayzer.exception.CsvCustomException;
+import com.bridgelabz.censusanalyzer.exception.CsvCustomException;
 
 public interface IStateCensusAnalyser {
 	public <T> List<T> loadCensusData(String filePathName, T className) throws CsvCustomException;

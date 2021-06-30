@@ -5,7 +5,7 @@
  * @since 30/06/2021
  * 
  */
-package com.bridgelabz.censusanlayzer.service.impl;
+package com.bridgelabz.censusanalyzer.service.impl;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -19,9 +19,9 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.bridgelabz.censusanlayzer.exception.CsvCustomException;
-import com.bridgelabz.censusanlayzer.service.IStateCensusAnalyser;
-import com.bridgelabz.censusanlayzer.type.ExceptionType;
+import com.bridgelabz.censusanalyzer.exception.CsvCustomException;
+import com.bridgelabz.censusanalyzer.service.IStateCensusAnalyser;
+import com.bridgelabz.censusanalyzer.type.ExceptionType;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 

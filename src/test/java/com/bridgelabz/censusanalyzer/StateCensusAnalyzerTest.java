@@ -7,10 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.bridgelabz.censusanlayzer.dto.CsvStateCensus;
-import com.bridgelabz.censusanlayzer.exception.CsvCustomException;
-import com.bridgelabz.censusanlayzer.service.IStateCensusAnalyser;
-import com.bridgelabz.censusanlayzer.service.impl.StateCensusAnalyser;
+import com.bridgelabz.censusanalyzer.dto.CsvStateCensus;
+import com.bridgelabz.censusanalyzer.exception.CsvCustomException;
+import com.bridgelabz.censusanalyzer.service.IStateCensusAnalyser;
+import com.bridgelabz.censusanalyzer.service.impl.StateCensusAnalyser;
 
 public class StateCensusAnalyzerTest {
 

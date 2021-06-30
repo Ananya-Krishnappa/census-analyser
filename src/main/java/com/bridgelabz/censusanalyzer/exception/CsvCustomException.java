@@ -1,6 +1,6 @@
-package com.bridgelabz.censusanlayzer.exception;
+package com.bridgelabz.censusanalyzer.exception;
 
-import com.bridgelabz.censusanlayzer.type.ExceptionType;
+import com.bridgelabz.censusanalyzer.type.ExceptionType;
 
 public class CsvCustomException extends Exception {
 
